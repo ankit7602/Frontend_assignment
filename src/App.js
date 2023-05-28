@@ -36,12 +36,7 @@ function App() {
   return (
     <div className="center">
     <h1>{state}</h1>
-    {
-      state==="Flavanoids"?
-      <Table groupedData={groupedData} property="Flavanoids"/>
-      :
-      <Table groupedData={groupedData} property="Gamma"/>
-    }
+      <Table groupedData={groupedData} property={state}/>
     <button onClick={()=>handleTable()}>Change to {state==="Flavanoids"?"Gamma":"Flavanoids"}</button>
     </div>
   );

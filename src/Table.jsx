@@ -18,7 +18,6 @@ const Table = ({ property = "Flavanoids", groupedData }) => {
                 <thead>
                     <tr>
                         <th>
-
                             Measure
                         </th>
                         {classes.length
@@ -32,9 +31,7 @@ const Table = ({ property = "Flavanoids", groupedData }) => {
                             : ""}
                     </tr>
                 </thead>
-
                 <tbody>
-
                     <React.Fragment>
                         {data.map((item, key) => {
                             return (
